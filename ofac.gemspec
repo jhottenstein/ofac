@@ -17,10 +17,19 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", ">= 3.2"
+  s.add_dependency "railties", ">= 5.2"
+  s.add_dependency "activesupport"
+  s.add_dependency "activerecord"
 
   s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rails', ">= 5.2"
+  s.add_development_dependency 'shoulda'
+  s.add_development_dependency 'shoulda-matchers'
+  s.add_development_dependency 'shoulda-context'
+  s.add_development_dependency 'minitest'
+  s.add_development_dependency 'minitest-reporters'
+  s.add_development_dependency 'mocha'
 
   s.license = 'MIT'
-
 end
